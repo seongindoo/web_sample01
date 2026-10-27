@@ -296,11 +296,12 @@ footer p {
     color: #075b91;
 }
 
+/* 게시판 글쓰기 폼 디자인 */
 .form-section {
     max-width: 800px;
 }
 
-/* 게시판 글쓰기 폼 디자인 */
+
 .form-section form label {
     display: block;
     margin-top: 15px;
@@ -313,11 +314,19 @@ footer p {
     padding: 12px;
     border: 1px solid #cbdbe5;
     border-radius: 5px;
-    font-family: inherit;
-    resize: vertical;
+    font-family: inherit; /* input 폼 안에 입력되는 글꼴이 상위 태그에서 지정한 글꼴로 상속 */
 }
 
-.form-button {
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe5;
+    border-radius: 5px;
+    font-family: inherit; /* input 폼 안에 입력되는 글꼴이 상위 태그에서 지정한 글꼴로 상속 */
+    resize: vertical; /* 세로로만 영역늘리기 허용 */
+}
+
+.form-buttons {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
