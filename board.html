@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>게시판</title>
+</head>
+<body>
+    <!-- 공통 상단 메뉴-->
+    <header>
+        <div class="logo">
+            <a href="index.html">GOOKBBONG PHARMA</a>
+        </div>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="#">회사소개</a>
+            <a href="#">제품소개</a>
+            <a href="board.html">게시판</a>
+        </nav>
+    </header>
+
+    <!-- 게시판 목록 -->
+    <main>
+        <!-- 게시판 검색 입력-->
+        <section class="page-title">
+            <h1>게시판</h1>
+            <p>GOOKBBONG PHARMA의 새로운 소식을 확인하세요.</p>
+        </section>
+
+        <section class="content-section">
+            <div class="board-search">
+                <input type="text" id="searchText" placeholder="검색할 제목을 입력하세요">
+                <button class="button" onclick="">검색</button>
+            </div>
+        
+
+            <!-- 게시판 목록 출력 -->
+            <table class="board-table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody id="boardList">
+                    <tr>
+                        <td>3</td>
+                        <td class="subject"><a href="view.html">올바른 의약품 복용 안내를 잘 읽어보세요</a></td>
+                        <td>관리자</td>
+                        <td>2026.10.27</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="subject"><a href="view.html">제약 홈페이지 오픈</a></td>
+                        <td>관리자</td>
+                        <td>2026.10.26</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="subject"><a href="view.html">연구개발 소식</a></td>
+                        <td>각시탈</td>
+                        <td>2026.10.24</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="board-bottom">
+                <div class="page-number">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+                <a href="write.html" class="button">글쓰기</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 공통 하단 footer -->
+    <footer>
+        <p>GOOKBBONG PHARMA</p>
+        <p>주소 : 서울특별시 건강로 123 | 대표전화: 02-1234-5678</p>
+        <small>Copyright 2025 GOOKBBONG PHARMA. All rights reserved.</small>
+    </footer>
+</body>
+</html>
